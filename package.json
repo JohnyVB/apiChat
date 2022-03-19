@@ -1,7 +1,7 @@
 {
-  "name": "backend-lector",
+  "name": "apichat",
   "version": "1.0.0",
-  "description": "Api RESTfull",
+  "description": "Api chat",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
