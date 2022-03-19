@@ -21,14 +21,7 @@ class Server {
 
         this.path = {
             auth: '/api/auth',
-            users: '/api/users',
-            uploads: '/api/uploads',
-            articles: '/api/articles',
-            chapters: '/api/chapters',
-            comments: '/api/comments',
-            searchs: '/api/searchs',
-            lists: '/api/lists',
-            notifys: '/api/notifys'
+            users: '/api/users'
         }
 
 
@@ -74,13 +67,7 @@ class Server {
 
         this.app.use(this.path.auth, require('../routes/authRouter'));
         this.app.use(this.path.users, require('../routes/userRouter'));
-        this.app.use(this.path.uploads, require('../routes/uploadsRouter'));
-        this.app.use(this.path.articles, require('../routes/articleRouter'));
-        this.app.use(this.path.chapters, require('../routes/chapterRouter'));
-        this.app.use(this.path.comments, require('../routes/commentRouter'));
-        this.app.use(this.path.searchs, require('../routes/searchRouter'));
-        this.app.use(this.path.lists, require('../routes/listRouter'));
-        this.app.use(this.path.notifys, require('../routes/notifyRouter'));
+
     }
 
     socket(){
